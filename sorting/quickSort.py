@@ -1,6 +1,3 @@
-# import copy
-# import array as arr
-
 def quicksort_list(elements: list):
     """
     Sort a list of elements in O(n*logn) time complexity

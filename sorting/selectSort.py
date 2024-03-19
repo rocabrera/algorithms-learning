@@ -1,13 +1,14 @@
 import copy
-import array as arr
+from array import array
+from typing import Union, List
 
-def selectsort(array: arr) -> arr:
+def selectsort(array: Union[array, List]) -> Union[array, List]:
     """
     Args:
-    array: array of elements 
+    array: array or list of elements 
 
     Return:
-    An array sorted
+    An array or list sorted
     """
 
     sorted_array = copy.deepcopy(array)

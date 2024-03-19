@@ -6,7 +6,6 @@ from selectSort import selectsort
 #############################
 # List tests
 #############################
-
 @pytest.mark.parametrize("sorting_algorithm",
     [(selectsort), (quicksort_list)],
 )
