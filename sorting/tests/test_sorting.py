@@ -1,5 +1,5 @@
 import pytest
-from quickSort import quicksort_list
+from quickSort import quicksort_list, quicksort
 from selectSort import selectsort
 
 
@@ -40,7 +40,7 @@ def test_duplicated_for_list(list_edge_cases, sorting_algorithm):
 # Array tests
 #############################
 @pytest.mark.parametrize("sorting_algorithm",
-    [(selectsort)],
+    [(selectsort), (quicksort)],
 )
 def test_random_for_array(array_random_cases, sorting_algorithm):
     
@@ -50,7 +50,7 @@ def test_random_for_array(array_random_cases, sorting_algorithm):
         assert result == expected
 
 @pytest.mark.parametrize("sorting_algorithm",
-    [(selectsort)],
+    [(selectsort), (quicksort)],
 )
 def test_edge_for_array(array_edge_cases, sorting_algorithm):
 
@@ -60,7 +60,7 @@ def test_edge_for_array(array_edge_cases, sorting_algorithm):
         assert result == expected
 
 @pytest.mark.parametrize("sorting_algorithm",
-    [(selectsort)],
+    [(selectsort), (quicksort)],
 )
 def test_duplicated_for_array(array_duplicated_elements_cases, sorting_algorithm):
 
