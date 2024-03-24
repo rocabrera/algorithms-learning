@@ -26,11 +26,13 @@ class Solution:
         i = snums
         ks = []
         while i > 0:
-
             frequency = frequencys[i]
+
             for n in frequency:
                 ks.append(n)
             i -= 1
+
             if len(ks) == k:
                 return ks
+
         return [] 
