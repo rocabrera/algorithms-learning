@@ -32,7 +32,3 @@ class Solution:
                     l += 1
             
         return triplets
-
-nums = [-1,0,1,0]
-results = Solution().threeSum(nums)
-print(results)
